@@ -1,0 +1,5 @@
+StudentCrud\StudentCrud\service\StudentService.class
+StudentCrud\StudentCrud\domain\Student.class
+StudentCrud\StudentCrud\repository\StudentRepos.class
+StudentCrud\StudentCrud\StudentCrudApplication.class
+StudentCrud\StudentCrud\controller\StudentController.class

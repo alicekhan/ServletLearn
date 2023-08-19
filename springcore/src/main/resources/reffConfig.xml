@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.maven.springcore.reference.DependentObjectClass" name="dependent">
+		<property name="y" value="210" />
+	</bean>
+	 <!-- 
+	<bean class="com.maven.springcore.reference.DependencyClass" name="dependency">
+	<property name="x" value="110" />
+	<property name="object">
+		<ref bean="dependent" />
+	</property>
+	
+	<property name="object" ref="dependent" />
+	
+	</bean>
+	-->
+	
+	
+	<bean class="com.maven.springcore.reference.DependencyClass" name="depscy" p:x="33" p:object-ref="dependent" />
+</beans>
